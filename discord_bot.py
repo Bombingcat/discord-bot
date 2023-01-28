@@ -4,7 +4,7 @@ from discord.ext import commands
 
 
 GUILD = 1017089509269188648
-TOKEN = 'MTAyNzU3OTcyMzI1MDk0NjA4OA.GwvooR.GZ1FLcgQ6W4zuau8uCYDZ3mH6b-FDNrhoO8fPQ'
+TOKEN = ''
 #intents = discord.Intents.default()
 #intents.message_content = True
 intents = discord.Intents(value = 8)
