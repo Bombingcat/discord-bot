@@ -1,6 +1,6 @@
-# e = input()
+input = input('')
 
-# if e == e:
-#     print('e')
-#     not
-#         print('niet e')
+if input == "e":
+    print ('e')
+else:
+    print ('niet e')
