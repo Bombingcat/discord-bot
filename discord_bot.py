@@ -3,6 +3,7 @@ import messages
 import logging
 import time
 import random
+import requests
 import user_message_log
 from configuration import get_token
 from discord import app_commands
@@ -107,9 +108,10 @@ async def chess(interaction: discord.Interaction):
     """omg chess in a bot"""
     await interaction.response.send_message('chess part goes here, if you see this its not done yet')
 
-
-
-
+@tree.command()
+async def img_test(interaction: discord.Interaction):
+    """image posting"""
+    await interaction.response.send_message('AAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHHH WAAROM WERKT NIETS')
 
 # @tree.command()
 # async def creeper(interaction: discord.Interaction):
