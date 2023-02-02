@@ -77,10 +77,9 @@ async def on_message(message):
     #     return
     # messages.report()
 
-
 @tree.command()
 async def msg_counter(interaction: discord.Interaction):
-    """e"""
+    """tells you what user send how much messages"""
     await interaction.response.send_message(repr(user_message_log.message_counts))
 
 @tree.command()
@@ -104,26 +103,23 @@ async def lauchtime(interaction: discord.Interaction):
     await interaction.response.send_message('the bot was launched last on ' + (current_time))
 
 @tree.command()
-async def creeper(interaction: discord.Interaction):
-    """awwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww man"""
-    await interaction.response.send_message((random.choice(creeper_list)))
+async def chess(interaction: discord.Interaction):
+    """omg chess in a bot"""
+    await interaction.response.send_message('chess part goes here, if you see this its not done yet')
 
 
 
 
 
-# @client.event
-# async def on_message(message):
-#     channel = client.get_channel(1030698526075785298)
-#     await channel.send('testing')
-#     print(message.author, message.content, message.channel.id)
-#     pass
+# @tree.command()
+# async def creeper(interaction: discord.Interaction):
+#     """awwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww man"""
+#     await interaction.response.send_message((random.choice(creeper_list)))
 
 
-# @client.command()
-# async def hello(ctx):
-#     channel = client.get_channel(1033759192596619386)
-#     await channel.send(f'hello there {ctx.author.mention}')
+
+
+
 
 client.run(TOKEN )
 
